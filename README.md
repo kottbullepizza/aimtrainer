@@ -1,4 +1,7 @@
 # aimtrainer
+Try it yourself here:
+https://kottbullepizza.github.io/aimtrainer/
+
 An aimtrainer/click-accuracy-trainer using the HTML Canvas-element for 2d-context rendering and Javascript for handling click-events and DOM-manipulation.
 
 <img width="1919" height="1078" alt="image" src="https://github.com/user-attachments/assets/6074d681-cdf5-4def-a996-3e65d4b7437e" />
