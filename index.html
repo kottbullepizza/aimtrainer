@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Aimtrainer</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <canvas id="canvas1"></canvas>
+        <div id="settings">
+            <label id="difficulty-label" class="label" for="difficulty">Difficulty:</label>
+            <label id="size-label" class="label" for="size">Size:</label>
+            <label id="time-label" class="label" for="time">Time:</label>
+            <input
+                type="range"
+                id="difficulty"
+                class="range-input input"
+                name="difficulty"
+                min="1"
+                max="100"
+                value="10"
+                step="1"
+            />
+            <input
+                type="range"
+                id="size"
+                class="range-input input"
+                name="size"
+                min="10"
+                max="35"
+                value="25"
+                step="5"
+            />
+            <input
+                type="range"
+                id="time"
+                class="range-input input"
+                name="time"
+                min="15"
+                max="150"
+                value="30"
+                step="15"
+            />
+            <label id="pop-label" for="pop">Delete target on click</label>
+            <button id="start-btn" class="btn start-btn">Start</button>
+            <span></span>
+            <input
+                type="range"
+                id="pop"
+                class="range-input input"
+                name="pop"
+                min="0"
+                max="1"
+                value="1"
+                step="1"
+            />
+            <span></span>
+            <span></span>
+        </div>
+        <div id="display">
+            <p id="timer-label">Time: 0</p>
+            <p id="score-label">Score: 0</p>
+        </div>
+        <div id="scoreboard">
+            <p id="scoreboard-target-hits">Target hits:</p>
+            <p id="scoreboard-click-accuracy">Click accuracy:</p>
+            <div>
+                <button id="settings-btn" class="btn">Change settings</button>
+                <button id="playagain-btn" class="btn start-btn">Play again</button>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
