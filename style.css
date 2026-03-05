@@ -68,7 +68,7 @@ body {
 #settings {
     display: grid;
     grid-template-columns: 30% 30% 30%;
-    grid-template-rows: 100px 100px 50px;
+    grid-template-rows: 100px 100px 80px;
     padding: 60px 0;
 }
 
@@ -135,4 +135,5 @@ body {
   border-radius: 4px;
   border: 3px solid orange;
   box-shadow: 0 0 10px orangered;
+
 }
