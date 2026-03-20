@@ -5,9 +5,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Aimtrainer</title>
         <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/x-icon" href="aimtrainer-favicon.png">
     </head>
     <body>
-        <canvas id="canvas1"></canvas>
+        <canvas id="gameboard-canvas"></canvas>
         <div id="settings">
             <label id="difficulty-label" class="label" for="difficulty">Difficulty:</label>
             <label id="size-label" class="label" for="size">Size:</label>
@@ -28,7 +29,7 @@
                 class="range-input input"
                 name="size"
                 min="10"
-                max="35"
+                max="50"
                 value="25"
                 step="5"
             />
@@ -43,7 +44,10 @@
                 step="15"
             />
             <label id="pop-label" for="pop">Delete target on click</label>
-            <button id="start-btn" class="btn start-btn">Start</button>
+            <div class="btns-div">
+                <button id="start-btn" class="btn start-btn">Start</button>
+                <button id="scoreboard-btn" class="btn">Scoreboard</button>
+            </div>
             <span></span>
             <input
                 type="range"
@@ -52,19 +56,20 @@
                 name="pop"
                 min="0"
                 max="1"
-                value="1"
+                value="0"
                 step="1"
             />
-            <span></span>
-            <span></span>
         </div>
         <div id="display">
             <p id="timer-label">Time: 0</p>
             <p id="score-label">Score: 0</p>
         </div>
         <div id="scoreboard">
-            <p id="scoreboard-target-hits">Target hits:</p>
-            <p id="scoreboard-click-accuracy">Click accuracy:</p>
+            <div>
+                <p id="scoreboard-target-hits">Target hits:</p>
+                <p id="scoreboard-click-accuracy">Click accuracy:</p>
+            </div>
+            <canvas id="scoreboard-canvas"></canvas>
             <div>
                 <button id="settings-btn" class="btn">Change settings</button>
                 <button id="playagain-btn" class="btn start-btn">Play again</button>
@@ -73,3 +78,4 @@
         <script src="script.js"></script>
     </body>
 </html>
+
